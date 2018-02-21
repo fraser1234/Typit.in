@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Typit.in</title>
+  <link rel="stylesheet" href="style.css">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYKWtZ-PjmTU8DkgEFwvQRsNR8KLfhlYs" type="text/javascript"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+  <script src='bundle.js'></script>
+</head>
+<body id='flag-background' background="/images/flag-map.jpg">
+
+  <!-- <h1>Typit.in DevSpace</h1> -->
+
+  <div class="game-container">
+
+    <div class="game-window">
+      <p id="title" style="margin-bottom: 0px;"> f l a g s </p>
+      <div class="game-select-button" id="flag-game-button"></div>
+      <div id="title-and-flag"></div>
+      <!-- <p id="display-country">s c o t l a n d</p> -->
+      <div class="dont-display" id="main-map"></div>
+      <!-- <img src="/images/flags/scotland.svg"  id="flag-image"/> -->
+      <div id="answer-and-counter"></div>
+
+      <!-- <p id="flag-answer-display">_ _ _ _ _ _ _ _</p> -->
+    </div>
+  </div>
+
+  <div class="keyboard-container">
+    <div class="keyrow-1">
+      <div class="key" id="key_1">
+        1
+      </div>
+      <div class="key" id="key_2">
+        2
+      </div>
+      <div class="key" id="key_3">
+        3
+      </div>
+      <div class="key" id="key_4">
+        4
+      </div>
+      <div class="key" id="key_5">
+        5
+      </div>
+      <div class="key" id="key_6">
+        6
+      </div>
+      <div class="key" id="key_7">
+        7
+      </div>
+      <div class="key" id="key_8">
+        8
+      </div>
+      <div class="key" id="key_9">
+        9
+      </div>
+      <div class="key" id="key_0">
+        0
+      </div>
+      <a href="http://localhost:3000/flags.html">
+      <div class="key" id="reset">
+
+      </div>
+    </a>
+    </div>
+
+    <div class="keyrow-2">
+      <div class="key" id="key_Q">
+        Q
+      </div>
+      <div class="key" id="key_W">
+        W
+      </div>
+      <div class="key" id="key_E">
+        E
+      </div>
+      <div class="key" id="key_R">
+        R
+      </div>
+      <div class="key" id="key_T">
+        T
+      </div>
+      <div class="key" id="key_Y">
+        Y
+      </div>
+      <div class="key" id="key_U">
+        U
+      </div>
+      <div class="key" id="key_I">
+        I
+      </div>
+      <div class="key" id="key_O">
+        O
+      </div>
+      <div class="key" id="key_P">
+        P
+      </div>
+      <div class="key" id="speaker">
+
+      </div>
+
+    </div>
+
+    <div class="keyrow-3">
+      <div class="key" id="key_A">
+        A
+      </div>
+      <div class="key" id="key_S">
+        S
+      </div>
+      <div class="key" id="key_D">
+        D
+      </div>
+      <div class="key" id="key_F">
+        F
+      </div>
+      <div class="key" id="key_G">
+        G
+      </div>
+      <div class="key" id="key_H">
+        H
+      </div>
+      <div class="key" id="key_J">
+        J
+      </div>
+      <div class="key" id="key_K">
+        K
+      </div>
+      <div class="key" id="key_L">
+        L
+      </div>
+      <div class="key" id="enter">
+        ⏎
+      </div>
+    </div>
+
+    <div class="keyrow-4">
+      <div class="key" id="key_Z">
+        Z
+      </div>
+      <div class="key" id="key_X">
+        X
+      </div>
+      <div class="key" id="key_C">
+        C
+      </div>
+      <div class="key" id="key_V">
+        V
+      </div>
+      <div class="key" id="key_B">
+        B
+      </div>
+      <div class="key" id="key_N">
+        N
+      </div>
+      <div class="key" id="key_M">
+        M
+      </div>
+
+      <div class="key" id="key_up">
+        ↑
+      </div>
+
+    </div>
+    <a href="http://localhost:3000">
+    <div class="key" id="words-game">
+      <div id="light"></div>
+    </div>
+  </a>
+    <a href="http://localhost:3000/numbers.html">
+    <div class="key" id="numbers-game">
+      <div id="light"></div>
+    </div>
+  </a>
+    <div class="key" id="globe-game">
+      <div id="light-on"></div>
+    </div>
+    <div class="key" id="space">
+    </div>
+    <div class="key" id="key_left">
+      ←
+    </div>
+    <div class="key" id="key_down">
+      ↓
+    </div>
+    <div class="key" id="key_right">
+      →
+    </div>
+  </div>
+  <div class="game-select-button dont-display" id="add-game-button"></div>
+  <div class="game-select-button dont-display" id="minus-game-button"></div>
+  <div class="game-select-button dont-display" id="multiply-game-button"></div>
+  <div class="game-select-button dont-display" id="divide-game-button"></div>
+  <div class="game-select-button dont-display" id="animal-game-button"></div>
+  <div class="game-select-button dont-display" id="food-game-button"></div>
+  <div class="game-select-button dont-display" id="colour-game-button"></div>
+  <div class="game-select-button dont-display" id="clothing-game-button"></div>
+  <div class="game-select-button dont-display" id="test-game-button"></div>
+
+
+</body>
+</html>
